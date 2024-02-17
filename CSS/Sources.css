@@ -23,6 +23,24 @@
     background-color: #00cc00;
 }
 
+.firstItem{
+    background-color: #000000;
+    color: yellow;
+}
+.secondItem{
+    background-color: yellow;
+    color: #ff0000;
+}
+.thirdItem{
+    background-color: #ff0000;
+    color: #000000;
+}
+
+.fourthItem{
+    background-color: #cc33ff;
+    color:yellow;
+}
+
 .blackBorder{
     border-style: solid;
     border-color: #000000;
@@ -32,4 +50,13 @@
 .imgRescaleToFitGridCol{
     max-width:198px;
     max-height:189px;
+}
+
+.footer {
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff0000;
 }
