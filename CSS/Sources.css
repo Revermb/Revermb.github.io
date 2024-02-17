@@ -60,3 +60,9 @@
     line-height: 30px;
     background-color: #ff0000;
 }
+
+.pfpMedia{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

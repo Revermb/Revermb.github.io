@@ -10,3 +10,9 @@
 p, h2{
     margin-left: 15px;
 }
+
+.pfpMedia{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
