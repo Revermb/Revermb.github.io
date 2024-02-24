@@ -15,6 +15,23 @@
     color: white;
 }
 
+.containerTextStyleOrange{
+    font-family: Georgia;
+    color: black;
+}
+
+.containerBlack{
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+}
+
+.containerTextStyleWhite{
+    font-family: Georgia;
+    color: black;
+}
+
 .footer {
     position:sticky;
     bottom: 0;
@@ -25,6 +42,12 @@
 }
 
 .imgRescaleToFitGridCol{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.imgRescaleToFitGridColToRight{
+    float: right;
     max-width: 200px;
     max-height: 200px;
 }

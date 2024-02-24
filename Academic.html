@@ -48,8 +48,13 @@
         </div>
     </nav>
 
-    <!-- For some fucking reason the images don't preview in default browser
-    so guess everytime I edit the css for an image I'll have to upload to Github -->
+    <!--
+        For some fucking reason the images don't preview in default browser
+        so guess everytime I edit the css for an image I'll have to upload to Github 
+            edit: My god, it's cause i didn't add a fucking . to the href WHY TF DID VS SUGGEST IT THEN
+
+        Fuck using html tables. Bootstrap for the win.
+    -->
 
     <!-- Ijkingstoetsen-->
     <div class="container p-4 my-5 bg-primary rounded">
@@ -60,41 +65,78 @@
                     <p class="containerTextStyleBlue">Informatica / IT / AI</p>
                 </div>
                 <div class="col">
-                    <img class="imgRescaleToFitGridCol float-end" src="/Media/Academic/Logo-ijkingstoets.png"
+                    <img class="imgRescaleToFitGridCol float-end" src="./Media/Academic/Logo-ijkingstoets.png"
                         alt="Logo-ijkingstoets.png">
                 </div>
             </div>
         </a>
     </div>
 
-    <!-- UGent -->
-    <div class="container p-5 my-5 bg-black rounded">
-        
-        <!-- html tables are the bane of this website-->
-        <table class="table.black">
-            <h1 class="containerTextStyleBlack">UGent</h1>
-            <tr>
-                <td>
-                    <a class="containerTextStyleBlack"
-                        href="https://studiekiezer.ugent.be/2024/bachelor-of-science-in-de-ingenieurswetenschappen-computerwetenschappen-EBIRWECO">
-                        Computer science
-                    </a>
-                </td>
-                <td rowspan="2">
-                    <!-- ah yes, the usual why tf doesn't css work, my favorite (float-end doesn't work D:< so guess i'll try float-right)-->
-                    <img class="imgRescaleToFitGridCol float-right" src="/Media/Academic/Logo-UGent.png">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class="containerTextStyleBlack"
-                        href="https://studiekiezer.ugent.be/2024/bachelor-of-science-in-de-industriele-wetenschappen-informatica-EB7INWIN">
-                        IT
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <!-- U Gent -->
+    <div class="container p-4 my-5 bg-black rounded">
+        <div class="row">
+            <div class="col">
+                <h1 class="containerTextStyleBlack">UGent</h1>
+                <a href="https://studiekiezer.ugent.be/2024/bachelor-of-science-in-de-ingenieurswetenschappen-computerwetenschappen-EBIRWECO"
+                    class="containerTextStyleBlack">
+                    Computer science
+                </a>
+            </br>
+                <a href="https://studiekiezer.ugent.be/2024/bachelor-of-science-in-de-industriele-wetenschappen-informatica-EB7INWIN"
+                    class="containerTextStyleBlack">
+                    IT
+                </a>
+            </div>
+            <div class="col">
+                <img class="imgRescaleToFitGridCol float-end" src="./Media/Academic/Logo-UGent.png"
+                    alt="Logo-ijkingstoets.png">
+            </div>
+        </div>
     </div>
+
+    <!-- thomas more -->
+    <div class="container p-4 my-5 bg-warning rounded">
+        <div class="row">
+            <div class="col">
+                <h1 class="containerTextStyleOrange">Thomas More</h1>
+                <a href="https://thomasmore.be/nl/opleidingen/professionele-bachelor/toegepaste-informatica/application-development/geel/basistraject"
+                    class="containerTextStyleOrange">
+                    Application Development
+                </a>
+            </br>
+                <a href="https://thomasmore.be/nl/opleidingen/professionele-bachelor/elektronica-ict/cloud-and-cyber-security/geel/basistraject"
+                    class="containerTextStyleOrange">
+                    Cybersecurity
+                </a>
+                <a href="https://thomasmore.be/nl/opleidingen/professionele-bachelor/toegepaste-informatica/artificial-intelligence/geel/basistraject"
+                 class="containerTextStyleOrange">
+                    AI
+                </a>
+            </div>
+            <div class="col">
+                <img class="imgRescaleToFitGridCol float-end" src="./Media/Academic/Logo-Thomas-more.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- hogent -->
+
+    <div class="container p-4 my-5 bg-white rounded containerBlack">
+        <div class="row">
+            <div class="col">
+                <h1 class="containerTextStyleWhite">Hogent</h1>
+                <a href="https://www.hogent.be/opleidingen/bachelors/toegepaste-informatica/" class="containerTextStyleWhite">
+                    Multi
+                </a>
+            </div>
+            <div class="col">
+                <img class="imgRescaleToFitGridCol float-end" src="./Media/Academic/Logo-hogent.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
