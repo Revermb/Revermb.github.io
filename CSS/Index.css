@@ -4,3 +4,8 @@
     width: 50px;
     border-radius: 50%;
 }
+
+.containerTextStyleBlue{
+    font-family: Georgia;
+    color: white;
+}
