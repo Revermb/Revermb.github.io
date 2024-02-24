@@ -10,6 +10,11 @@
     color: white;
 }
 
+.containerTextStyleBlack{
+    font-family: Georgia;
+    color: white;
+}
+
 .footer {
     position:sticky;
     bottom: 0;
