@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'consolas';
+}
+
+header {
+    background-image: url(../Media/Backgrounds/12.5_SDM_Clock_Tower.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0 80px 15px;
+}
+
+nav {
+    display: flex;
+    flex-flow: column;
+}
+
+nav a {
+    padding: 15px 0 15px 15px;
+    background-color: #e2e616;
+    transition-duration: 500ms;
+}
+
+nav a:hover {
+    background-color: #c6c919;
+}
+
+section {
+    margin: 10px 0 0 0;
+    margin-left: 7px
+}
+
+section p, ul, ol {
+    margin-left: 15px;
+    list-style: none;
+}
+
+footer {
+    margin: 10px 0 0 0;
+    position: sticky;
+}
+
+footer p{
+    margin: 0 0 0 10px;
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+.italiced{
+    font-style: italic;
+}
