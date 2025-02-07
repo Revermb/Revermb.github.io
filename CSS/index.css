@@ -61,8 +61,30 @@ footer {
 footer p {
     background-color: #d1c02d;
     padding: 0 0 0 10px;
-    border:black solid;
+    border: black solid;
     border-width: 0px 2px 2px 2px;
+}
+
+#Socials div {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#Socials div a {
+    padding: 5px;
+    margin: 0px 4px 0px 4px;
+    background-color: rgb(182, 182, 182);
+    flex-grow: 1;
+    border-radius: 3px;
+    transition-duration: 300ms;
+    border: black solid 1px;
+    text-decoration: none;
+}
+
+#Socials div a:hover {
+    transform: scaleX(1.06) scaleY(1.06);
 }
 
 @media screen and (min-width: 800px) {
@@ -80,4 +102,16 @@ footer p {
 
 .italiced {
     font-style: italic;
+}
+.Youtube{
+    color:red;
+}
+.Twitch{
+    color:purple;
+}
+.Tumblr{
+    color:darkblue;
+}
+.Discord{
+    color:blue;
 }
