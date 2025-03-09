@@ -40,6 +40,11 @@
     src: url(../Fonts/Teko/Teko-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Cascadia Mono;
+    src: url(../Fonts/CascadiaMonoCode/CascadiaCode.ttf);
+}
+
 /*Default headers*/
 h1,
 h2,
