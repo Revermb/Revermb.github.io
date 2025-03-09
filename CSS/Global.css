@@ -1,0 +1,122 @@
+/*Importing CSS from other pages*/
+@import "./index.css";
+@import "./StandardClassesAndSocialMediaColours.css";
+
+/*Global Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*adding fonts*/
+@font-face {
+    font-family: Doto;
+    src: url(../Fonts/Doto/Doto-VariableFont_RONDwght.ttf);
+}
+
+@font-face {
+    font-family: Handjet;
+    src: url(../Fonts/Handjet/Handjet-VariableFont_ELGRELSHwght.ttf);
+}
+
+@font-face {
+    font-family: Jersey_15;
+    src: url(../Fonts/Jersey_15/Jersey15-Regular.ttf);
+}
+
+@font-face {
+    font-family: Keania_one;
+    src: url(../Fonts/Keania_One/KeaniaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Silkscreen;
+    src: url(../Fonts/Silkscreen/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../Fonts/Teko/Teko-VariableFont_wght.ttf);
+}
+
+/*Default headers*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: Teko, Consolas;
+}
+
+a {
+    font-family: "Cascadia mono";
+}
+
+p {
+    font-family: "Cascadia mono";
+    font-size: 17px;
+}
+
+/*Force everywhere*/
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    border: black solid 3px;
+    flex-flow: column;
+}
+
+nav a {
+    padding: 15px 0 15px 15px;
+    background-color: #e2e616;
+    transition-duration: 300ms;
+}
+
+nav a:hover {
+    background-color: #c6c919;
+}
+
+nav:nth-of-type(1) {
+    border-radius: 0 0 5px 5px;
+
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        flex-grow: 1;
+        text-align: center;
+        padding: 15px 0 15px 0px;
+    }
+}
+
+section {
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+section p,
+ul,
+ol {
+    margin-left: 15px;
+    list-style: none;
+}
+
+footer {
+    margin: 10px 0 0 0;
+}
+
+footer p {
+    background-color: #d1c02d;
+    padding: 0 0 0 10px;
+    border: black solid;
+    border-width: 0px 2px 2px 2px;
+}
