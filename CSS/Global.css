@@ -80,11 +80,6 @@ nav a:hover {
     background-color: #c6c919;
 }
 
-nav:nth-of-type(1) {
-    border-radius: 0 0 5px 5px;
-
-}
-
 @media screen and (min-width: 800px) {
     nav {
         flex-flow: row;
@@ -103,9 +98,7 @@ section {
     margin-left: 7px;
 }
 
-section p,
-ul,
-ol {
+section p,ul,ol {
     margin-left: 15px;
     list-style: none;
 }
@@ -116,7 +109,10 @@ footer {
 
 footer p {
     background-color: #d1c02d;
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 10px;
     border: black solid;
-    border-width: 0px 2px 2px 2px;
+    border-width: 2px 2px 2px 2px;
+    a{
+        float: right;
+    }
 }
