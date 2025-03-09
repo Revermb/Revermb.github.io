@@ -57,6 +57,7 @@ ol {
 
 footer {
     margin: 10px 0 0 0;
+    /*Make footer stay at bottom of the page*/
 }
 
 footer p {
