@@ -1,13 +1,6 @@
 #index {
     header {
-        background-image: url(../Media/Backgrounds/12.5_SDM_Clock_Tower.png);
-        
-        padding: 80px 0 80px 15px;
-    }
-
-    header h1 {
-        color: white;
-        text-shadow: black 1px 1px 5px;
+        background-image: url("../Media/Backgrounds/10.5_SDM_Clock_Tower.png");
     }
 
     #Socials div {
@@ -24,7 +17,7 @@
         background-color: rgb(182, 182, 182);
         flex-grow: 1;
         border-radius: 3px;
-        transition-duration: 300ms;
+        transition-duration: 200ms;
         border: black solid 1px;
         text-decoration: none;
     }
