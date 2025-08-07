@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up a server with rdp</title>
+</head>
+
+<body>
+    <h1>How to setup a server with rdp</h1>
+    <article>
+        <section>
+            <h3>Disclaimer: </h3>
+            <p>I am not responsible for anything you do with this server or the information in this &lt;article&gt;, i
+                am only writing this down for myself and for personal educational reasons only</p>
+        </section>
+        <section>
+            <h2>Setup</h2>
+            <p>First, make sure to have a bootable drive (in my case debian)</p>
+            <p>Continue doing a standard setup, make sure ssh is enabled</p>
+        </section>
+        <section>
+            <h2>Making it a Static IP</h2>
+            <p>Do "<code>sudo nano /etc/networks/interfaces</code>" and add the following:</p>
+            <p><code>{wifi interface} auto <br>
+                iface {wifi interface} inet static <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;address {desired ip address}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;netmask {desired ip netmask}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;gateway {desired ip gateway}<br>
+            </code></p>
+            <p>Replace {wifi interface} with the wifi interface you get by doing "<code>ip addr</code>"</p>
+        </section>
+        <section>
+            <h3>Adding rdp</h3>
+            <p>This RDP is ONLY for in your local network and is unencrypted (since i am too lazy to do anything with
+                TSL)</p>
+            <p>Install the following packages</p>
+            <code>sudo apt-get install -y Xorg</code>
+        </section>
+        <section>
+            <h3>Adding an external drive</h3>
+            <p>Open your fstab file "<code>sudo nano /etc/fstab</code>"</p>
+            <p>We will mount our drive to folder inside our home folder</p>
+        </section>
+    </article>
+</body>
+
+</html>
