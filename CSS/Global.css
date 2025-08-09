@@ -55,90 +55,32 @@ h4 {
     font-family: Teko, Consolas;
 }
 
-a {
-    font-family: "Cascadia mono";
-}
-
+a,
 p {
-    font-family: "Cascadia mono";
-    font-size: 17px;
-    margin-bottom: 1rem;
+    font-family: monospace;
 }
 
-/*Force everywhere*/
-header {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 80px 0 80px 15px;
+h1 {
+    font-size: 3rem;
 }
 
-header h1 {
-    color: white;
-    text-shadow: black 1px 1px 5px;
+H2 {
+    font-size: 2rem;
 }
 
-nav {
-    display: flex;
-    border: black solid 3px;
-    flex-flow: column;
+h3 {
+    font-size: 1.5rem;
 }
 
-nav a {
-    padding: 15px 0 15px 15px;
-    background-color: #e2e616;
-    transition-duration: 200ms;
-}
-
-nav a:hover {
-    background-color: #c6c919;
-}
-
-@media screen and (min-width: 800px) {
-    nav {
-        flex-flow: row;
-        justify-content: space-between;
-    }
-
-    nav a {
-        flex-grow: 1;
-        text-align: center;
-        padding: 15px 0 15px 0px;
-    }
-}
-
-section {
-    margin-top: 7px;
-    margin-left: 7px;
-}
-
-section p,
-ul,
-ol {
-    margin-left: 15px;
-    list-style: none;
-}
-
-section h3 {
-    margin-left: 7px;
-}
-
-footer {
-    margin: 10px 0 0 0;
-}
-
-footer p {
-    background-color: #d1c02d;
-    padding: 0 10px 0 10px;
-    border: black solid;
-    border-width: 2px 2px 2px 2px;
-
-    a {
-        float: right;
-    }
-}
-
+/*DEFAULT SCREEN (Small)*/
 article {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+p {
+    font-size: 1.2rem;
+}
+
+/*Big screens*/
+@media screen and (min-width: 800px) {}
