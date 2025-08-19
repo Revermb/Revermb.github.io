@@ -79,6 +79,11 @@ header {
 
     /*Gives a text stroke*/
     -webkit-text-stroke: 2px black;
+
+    /*Sets the header image correctly*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
 nav {
@@ -113,8 +118,8 @@ footer {
     margin-top: 1rem;
 }
 
-/*Big screens
-@media screen and (min-width: 800px) {
+/*Big Screens*/
+/*@media screen and (min-width: 800px) {
     nav {
         display: flex;
         flex-direction: row;
