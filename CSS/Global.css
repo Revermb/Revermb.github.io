@@ -120,22 +120,36 @@ footer {
 
 #Socials ol {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 #Socials ol li {
-    background-color: gray;
-    border: solid black 2px;
-
-    padding: 3px 5px 3px 5px;
+    background-color: rgb(182, 182, 182);
+    padding: 5px;
     flex-grow: 1;
     border-radius: 3px;
-
+    transition-duration: 200ms;
+    border: black solid 2px;
     text-align: center;
+}
+
+#Socials ol li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#Socials ol li:hover {
+    transform: scaleX(1.06) scaleY(1.06);
+}
+
+#Socials ol li a {
+    font-family: Silkscreen;
+    text-decoration: none;
 }
 
 /*Big Screens*/
 @media screen and (min-width: 800px) {
-    #socials ol {
+    #Socials ol {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -143,6 +157,11 @@ footer {
 
     #Socials ol li {
         margin-right: 1%;
+        justify-content: space-evenly;
+    }
+
+    #Socials ol li:not(:last-child) {
+        margin-bottom: 0;
     }
 
     nav {
