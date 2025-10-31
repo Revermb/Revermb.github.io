@@ -48,9 +48,4 @@
     #Socials ol li:not(:last-child) {
         margin-bottom: 0;
     }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-    }
 }

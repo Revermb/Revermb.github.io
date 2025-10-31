@@ -88,10 +88,10 @@ header {
 }
 
 nav {
+    margin: 0 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 1rem 0 1rem
 }
 
 nav a {
@@ -119,11 +119,13 @@ section {
     margin: 1rem 0 1rem 0;
 }
 
-p {
+p,
+a {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
-footer hr{
+footer hr {
     margin: 0.5rem 0 0 0;
 }
 
