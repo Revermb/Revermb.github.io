@@ -84,12 +84,14 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    margin-bottom: 3px;
 }
 
 nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0 1rem 0 1rem
 }
 
 nav a {
@@ -99,6 +101,13 @@ nav a {
     flex-grow: 1;
     background-color: Yellow;
     outline: rgb(224, 224, 4) 3px solid;
+    margin: 3px 3px 3px 3px;
+    transition: 300ms;
+}
+
+nav a:hover {
+    transform: scaleX(1.04) scaleY(1.04);
+    outline: rgb(135, 135, 12) 3px solid;
 }
 
 article {
@@ -114,58 +123,26 @@ p {
     font-size: 1.2rem;
 }
 
-footer {
-    margin-top: 1rem;
+footer hr{
+    margin: 0.5rem 0 0 0;
 }
 
-#Socials ol {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-#Socials ol li {
-    background-color: rgb(182, 182, 182);
-    padding: 5px;
-    flex-grow: 1;
-    border-radius: 3px;
-    transition-duration: 200ms;
-    border: black solid 2px;
+footer p {
+    margin: 0.5rem 0 1rem 0;
     text-align: center;
 }
 
-#Socials ol li:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-#Socials ol li:hover {
-    transform: scaleX(1.06) scaleY(1.06);
-}
-
-#Socials ol li a {
-    font-family: Silkscreen;
-    text-decoration: none;
-}
-
-/*Big Screens*/
 @media screen and (min-width: 800px) {
-    #Socials ol {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #Socials ol li {
-        margin-right: 1%;
-        justify-content: space-evenly;
-    }
-
-    #Socials ol li:not(:last-child) {
-        margin-bottom: 0;
-    }
-
     nav {
         display: flex;
         flex-direction: row;
+    }
+
+    nav a {
+        border-radius: 3px;
+    }
+
+    nav a:not(:last-child) {
+        margin-right: 0.5rem;
     }
 }
