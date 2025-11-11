@@ -107,7 +107,7 @@ nav a {
 
 nav a:hover {
     transform: scaleX(1.04) scaleY(1.04);
-    outline: rgb(135, 135, 12) 3px solid;
+    outline: rgb(175, 175, 0) 3px solid;
 }
 
 article {
@@ -122,7 +122,6 @@ section {
 p,
 a {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
 }
 
 footer hr {
@@ -130,7 +129,8 @@ footer hr {
 }
 
 footer p {
-    margin: 0.5rem 0 1rem 0;
+    background-color: #cecb10;
+    padding: 1rem 0 1rem 0;
     text-align: center;
 }
 
